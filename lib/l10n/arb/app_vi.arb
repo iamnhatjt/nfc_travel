@@ -1,0 +1,7 @@
+{
+    "@@locale": "vi",
+    "counterAppBarTitle": "Contador",
+    "@counterAppBarTitle": {
+        "description": "this is text decription for vietnamese language"
+    }
+}
