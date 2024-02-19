@@ -1,5 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:nfc_travel/core/di.dart';
+import 'package:nfc_travel/features/welcome/sign_in/sign_in_screen.dart';
+import 'package:nfc_travel/features/welcome/sign_up/sign_up_screen.dart';
 import 'package:nfc_travel/features/welcome/welcome_screen.dart';
 import 'package:nfc_travel/res/utils/navigation_service.dart';
 
@@ -15,6 +17,14 @@ class AppRouter {
     GoRoute(
       path: RouterPath.main,
       builder: (context, state) => const WelComeScreen(),
+    ),
+    GoRoute(
+      path: RouterPath.signIn,
+      builder: (context, state) => const SignInScreen(),
+    ),
+    GoRoute(
+      path: RouterPath.signUp,
+      builder: (context, state) => const SignUpScreen(),
     ),
   ];
 

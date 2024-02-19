@@ -1,10 +1,13 @@
 // ignore_for_file: no_default_cases
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:nfc_travel/core/app_router.dart';
 import 'package:nfc_travel/gen/assets.gen.dart';
 import 'package:nfc_travel/res/extensions/string_extensions.dart';
 import 'package:nfc_travel/res/utils/app_color.dart';
 import 'package:nfc_travel/res/utils/app_style.dart';
+import 'package:nfc_travel/res/utils/navigation_service.dart';
 
 enum WelcomeViewEnum {
   globalGuideAndIcon,
@@ -32,14 +35,20 @@ extension WelcomeViewExtention on WelcomeViewEnum {
   Widget get value {
     switch (this) {
       case WelcomeViewEnum.signUp:
-        return Text(
-          'Sign Up'.hardCode,
-          style: AppStyle.IB.copyWith(color: AppColor.primaryColor),
+        return GestureDetector(
+          onTap: () => currentContext.push(RouterPath.signUp),
+          child: Text(
+            'Sign Up'.hardCode,
+            style: AppStyle.IB.copyWith(color: AppColor.primaryColor),
+          ),
         );
       case WelcomeViewEnum.signIn:
-        return Text(
-          'Sign In'.hardCode,
-          style: AppStyle.IB,
+        return GestureDetector(
+          onTap: () => currentContext.push(RouterPath.signIn),
+          child: Text(
+            'Sign In'.hardCode,
+            style: AppStyle.IB,
+          ),
         );
       default:
         return const SizedBox.shrink();

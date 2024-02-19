@@ -24,7 +24,7 @@ class BaseRoundedButton extends _BaseRoundeButton {
     return BaseRoundedButton(
       padding: padding ?? const EdgeInsets.all(12),
       backgroundColor: backgroundColor ?? Colors.white,
-      borderRadius: BorderRadius.circular(radius ?? 16.0),
+      borderRadius: BorderRadius.circular(radius ?? 20.0),
       margin: margin,
       onTap: onTap,
       child: child,
@@ -42,7 +42,7 @@ class BaseRoundedButton extends _BaseRoundeButton {
     return BaseRoundedButton(
       padding: padding ?? const EdgeInsets.all(12),
       backgroundColor: backgroundColor ?? Colors.white,
-      borderRadius: BorderRadius.vertical(top: Radius.circular(radius ?? 16.0)),
+      borderRadius: BorderRadius.vertical(top: Radius.circular(radius ?? 20.0)),
       margin: margin,
       onTap: onTap,
       child: child,
@@ -60,7 +60,7 @@ class BaseRoundedButton extends _BaseRoundeButton {
       padding: padding ?? const EdgeInsets.all(12),
       backgroundColor: backgroundColor ?? Colors.white,
       borderRadius:
-          BorderRadius.vertical(bottom: Radius.circular(radius ?? 16.0)),
+          BorderRadius.vertical(bottom: Radius.circular(radius ?? 20.0)),
       margin: margin,
       onTap: onTap,
       child: child,

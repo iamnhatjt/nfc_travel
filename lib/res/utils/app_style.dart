@@ -16,4 +16,8 @@ class AppStyle {
     fontWeight: FontWeight.w700,
     fontSize: 14,
   );
+  static const TextStyle IM = TextStyle(
+    fontWeight: FontWeight.w500,
+    fontSize: 12,
+  );
 }
