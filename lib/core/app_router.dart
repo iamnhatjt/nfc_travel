@@ -1,11 +1,13 @@
 import 'package:go_router/go_router.dart';
 import 'package:nfc_travel/core/di.dart';
-import 'package:nfc_travel/features/welcome/welcome.dart';
+import 'package:nfc_travel/features/welcome/welcome_screen.dart';
 import 'package:nfc_travel/res/utils/navigation_service.dart';
 
 class RouterPath {
   RouterPath._();
   static String main = '/';
+  static String signIn = '/signIn';
+  static String signUp = '/signUp';
 }
 
 class AppRouter {

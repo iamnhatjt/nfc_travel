@@ -25,7 +25,7 @@ dependencies:
 dev_dependencies:
   bloc_test: ^9.1.4
   build_runner: ^2.4.8
-  cached_build_runner: any
+  flutter_gen_runner: ^5.4.0
   flutter_test:
     sdk: flutter
   mocktail: ^1.0.0
