@@ -1,3 +1,5 @@
+// ignore_for_file: inference_failure_on_function_return_type
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nfc_travel/res/utils/app_color.dart';
@@ -72,8 +74,6 @@ class InputTextField extends StatelessWidget {
             ? null
             : Text(
                 label ?? '',
-                // style:
-                //     PrimaryFont.medium(15).copyWith(color: AppColors.greyColor),
               ),
         suffixIcon: iconButton,
         errorText: errorText,
